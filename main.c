@@ -8,8 +8,8 @@ int main()
     scanf("%d", &start);
     printf("Enter the end number please: \n");
     scanf("%d", &end);
-    printf("The Armstrong numbers bewteen the range are:");
-
+    
+    printf("The Armstrong numbers are:");
     for (int i = start; i <= end; i++)
     {
         if (isArmstrong(i) == 1)
@@ -19,7 +19,7 @@ int main()
     }
     printf("\n");
 
-    printf("The Strong numbers bewteen the range are:");
+    printf("The Strong numbers are:");
     for (int i = start; i <= end; i++)
     {
         if (isStrong(i) == 1)
@@ -29,7 +29,7 @@ int main()
     }
     printf("\n");
 
-    printf("The Prime numbers bewteen the range are:");
+    printf("The Prime numbers are:");
     for (int i = start; i <= end; i++)
     {
         if (isPrime(i) == 1)
@@ -39,7 +39,7 @@ int main()
     }
     printf("\n");
 
-    printf("The Palindrome numbers bewteen the range are:");
+    printf("The Palindromes numbers are:");
     for (int i = start; i <= end; i++)
     {
         if (isPalindrome(i) == 1)
