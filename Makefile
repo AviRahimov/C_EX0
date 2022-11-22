@@ -41,5 +41,5 @@ advancedClassificationRecursion.o: advancedClassificationRecursion.c NumClass.h
 
 .PHONY: clean loops loopd reccursived reccursives
 
-make clean:
+clean:
 	rm -f *.o *.a *so
