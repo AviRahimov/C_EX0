@@ -26,23 +26,21 @@ int isArmstrong(int y)
     }
 }
 
+int reverse(int num)
+{ // get the reverse number
+    int digit = log10(num);
+    if (num == 0)
+    {
+        return 0;
+    }
+    return (int)((num % 10 * pow(10, digit)) + reverse(num / 10));
+}
+
 int isPalindrome(int num)
-{
-    int reminder, sum = 0;
-    int temp = num;
-    while (num > 0)
+{ // if it is palindrome return 1, else return 0
+    if (num == reverse(num))
     {
-        reminder = num % 10;
-        sum = (sum * 10) + reminder;
-        num = num / 10;
-    }
-    if (temp == sum)
-    {
-        printf("the number %d is a palindrome", num);
-    }
-    else
-    {
-        return printf("the number %d is not a palindrome", num);
+        return 1;
     }
     return 0;
 }

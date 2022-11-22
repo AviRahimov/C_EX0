@@ -38,14 +38,16 @@ int main()
         }
     }
     printf("\n");
-    
+
     printf("The Palindrome numbers bewteen the range are: \n");
     for (int i = start; i <= end; i++)
     {
-        if (i == isPalindrome(i))
+        if (isPalindrome(i) == 1)
         {
             printf(" %d", i);
         }
     }
+    printf("\n");
+    
     return 0;
 }

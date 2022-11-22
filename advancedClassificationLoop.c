@@ -25,6 +25,23 @@ int isArmstrong(int a)
     }
 }
 
-int isPalindrome(int){
+int isPalindrome(int num)
+{
+    int reminder, sum = 0;
+    int temp = num;
+    while (num > 0)
+    {
+        reminder = num % 10;
+        sum = (sum * 10) + reminder;
+        num = num / 10;
+    }
+    if (temp == sum)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
     return 0;
 }
