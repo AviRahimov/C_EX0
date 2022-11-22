@@ -8,7 +8,7 @@ int main()
     scanf("%d", &start);
     printf("Enter the end number please: \n");
     scanf("%d", &end);
-    
+
     printf("The Armstrong numbers are:");
     for (int i = start; i <= end; i++)
     {
@@ -19,10 +19,10 @@ int main()
     }
     printf("\n");
 
-    printf("The Strong numbers are:");
+    printf("The Palindromes are:");
     for (int i = start; i <= end; i++)
     {
-        if (isStrong(i) == 1)
+        if (isPalindrome(i) == 1)
         {
             printf(" %d", i);
         }
@@ -39,10 +39,10 @@ int main()
     }
     printf("\n");
 
-    printf("The Palindromes numbers are:");
+    printf("The Strong numbers are:");
     for (int i = start; i <= end; i++)
     {
-        if (isPalindrome(i) == 1)
+        if (isStrong(i) == 1)
         {
             printf(" %d", i);
         }
