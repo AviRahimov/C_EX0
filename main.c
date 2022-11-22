@@ -17,6 +17,8 @@ int main()
             printf(" %d", i);
         }
     }
+    printf("\n");
+
     printf("The Palindromes are:");
     for (int i = start; i <= end; i++)
     {
@@ -25,6 +27,7 @@ int main()
             printf(" %d", i);
         }
     }
+    printf("\n");
 
     printf("The Prime numbers are:");
     for (int i = start; i <= end; i++)
@@ -34,6 +37,7 @@ int main()
             printf(" %d", i);
         }
     }
+    printf("\n");
 
     printf("The Strong numbers are:");
     for (int i = start; i <= end; i++)
@@ -43,6 +47,7 @@ int main()
             printf(" %d", i);
         }
     }
+    printf("\n");
 
     return 0;
 }
