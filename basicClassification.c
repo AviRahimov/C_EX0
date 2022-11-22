@@ -14,6 +14,10 @@ int fact(int n)
 
 int isPrime(int x)
 {
+    if(x == 1)
+    {
+        return 1;
+    }
     for (int i = 2; i <= floor(sqrt(x)); i++)
     {
         if (x % i == 0)
