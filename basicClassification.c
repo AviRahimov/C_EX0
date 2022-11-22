@@ -14,17 +14,14 @@ int fact(int n)
 
 int isPrime(int x)
 {
-    for (int i = 2; i < sqrt(x); i++)
+    for (int i = 2; i <= floor(sqrt(x)); i++)
     {
         if (x % i == 0)
         {
             return 0;
         }
-        else
-        {
-            return 1;
-        }
     }
+    return 1;
 }
 
 int isStrong(int a)
@@ -38,10 +35,10 @@ int isStrong(int a)
     }
     if (sum == a)
     {
-        return 0;
+        return 1;
     }
     else
     {
-        return 1;
+        return 0;
     }
 }

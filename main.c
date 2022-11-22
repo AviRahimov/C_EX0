@@ -9,40 +9,43 @@ int main()
     printf("Enter the end number please: \n");
     scanf("%d", &end);
     printf("The Armstrong numbers bewteen the range are: \n");
-    /*
+
     for (int i = start; i <= end; i++)
     {
-        if(isArmstrong(i) == 1)
-       {
-           printf("%d, ", i);
-       }
-    }*/
-    /*    
+        if (isArmstrong(i) == 1)
+        {
+            printf("%d, ", i);
+        }
+    }
+    printf("\n");
+
     printf("The Strong numbers bewteen the range are: \n");
-    for (int i = x; i <= y; i++)
+    for (int i = start; i <= end; i++)
     {
-        if(i==isStrong(i))
+        if (isStrong(i) == 1)
         {
             printf(" %d", i);
         }
     }
+    printf("\n");
+
     printf("The Prime numbers bewteen the range are: \n");
-    for (int i = x; i <= y; i++)
+    for (int i = start; i <= end; i++)
     {
-        if(isPrime(i)==1)
+        if (isPrime(i) == 1)
         {
             printf(" %d", i);
         }
     }
-    printf("The Palindrome numbers bewteen the range are: \n");
-    for (int i = x; i <= y; i++)
-    {
-        if(i==isPalindrome(i))
-        {
-            printf(" %d", i);
-        }
-    }
-        */
+    printf("\n");
     
-       return 0;
+    printf("The Palindrome numbers bewteen the range are: \n");
+    for (int i = start; i <= end; i++)
+    {
+        if (i == isPalindrome(i))
+        {
+            printf(" %d", i);
+        }
     }
+    return 0;
+}

@@ -6,14 +6,14 @@ OBJECTS_RECURSIVE_BASIC = basicClassification.o advancedClassificationRecursion.
 
 all: recursived recursives loopd loops mains maindloop maindrec
 
-maindrec: main.o recursived
-	$(CC) $(FLAGS) -o maindloop $(OBJECTS_RECURSIVE_BASIC) recursives -lm
+maindrec: main.o libclassrec.so
+	$(CC) $(FLAGS) -o maindloop main.o libclassrec.so -lm
 
 maindloop: main.o loopd
-	$(CC) $(FLAGS) -o maindloop $(OBJECTS_LOOP_BASIC) loops -lm
+	$(CC) $(FLAGS) -o maindloop main.o libclassloops.a -lm
 
-mains: main.o recursives
-	$(CC) $(FLAGS) -o mains  $(OBJECTS_RECURSIVE_BASIC) recursives -lm
+mains: main.o libclassrec.a
+	$(CC) $(FLAGS) -o mains  main.o libclassrec.a -lm
 
 loops: $(OBJECTS_LOOP_BASIC)
 	$(AR) -rcs libclassloops.a $(OBJECTS_LOOP_BASIC)
