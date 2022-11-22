@@ -7,9 +7,9 @@ OBJECTS_RECURSIVE_BASIC = basicClassification.o advancedClassificationRecursion.
 all: recursived recursives loopd loops mains maindloop maindrec
 
 maindrec: main.o libclassrec.so
-	$(CC) $(FLAGS) -o maindloop main.o libclassrec.so -lm
+	$(CC) $(FLAGS) -o maindrec main.o libclassrec.so -lm
 
-maindloop: main.o loopd
+maindloop: main.o libclassloops.a
 	$(CC) $(FLAGS) -o maindloop main.o libclassloops.a -lm
 
 mains: main.o libclassrec.a
@@ -42,4 +42,4 @@ advancedClassificationRecursion.o: advancedClassificationRecursion.c NumClass.h
 .PHONY: clean loops loopd reccursived reccursives
 
 clean:
-	rm -f *.o *.a *so
+	rm -f *.o *.a *so mains maindloop maindrec
