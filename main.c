@@ -4,10 +4,9 @@
 int main()
 {
     int start, end;
-    printf("Enter the start number please: \n");
-    scanf("%d", &start);
-    printf("Enter the end number please: \n");
-    scanf("%d", &end);
+
+    printf("Enter the start and the end numbers please: \n");
+    scanf("%d %d", &start, &end);
 
     printf("The Armstrong numbers are:");
     for (int i = start; i <= end; i++)
