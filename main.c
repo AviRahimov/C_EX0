@@ -4,7 +4,6 @@ int main()
 {
     int start, end;
 
-    printf("Enter the start and the end numbers please: \n");
     scanf("%d %d", &start, &end);
 
     printf("The Armstrong numbers are:");
